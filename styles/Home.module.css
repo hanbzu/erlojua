@@ -33,7 +33,4 @@
 
 .sunhand {
   fill: rgb(255, 196, 0);
-  stroke: rgba(250, 171, 0, 0.966);
-  stroke-width: 1px;
-  vector-effect: non-scaling-stroke; /* not sure this is a good idea because of compatibility */
 }

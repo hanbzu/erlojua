@@ -17,7 +17,7 @@ export default function Home() {
       </Head>
 
       <main className={styles.main}>
-        <div className={styles.digital}>{format(time, "hh:mm")}</div>
+        <div className={styles.digital}>{format(time, "HH:mm")}</div>
 
         <SvgFrame>
           <Face />

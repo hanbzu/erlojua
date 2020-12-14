@@ -22,8 +22,6 @@ function getCoordinates() {
   });
 }
 
-const OPENWEATHERMAP_APIKEY = "a6c8cd79bbf5688362cf8bcf5d74c105";
-
 export default function useLocalData() {
   const [localData, setLocalData] = React.useState({});
   React.useEffect(() => {
@@ -33,10 +31,9 @@ export default function useLocalData() {
       // I can only do a call to the "one call API" for the hourly weather forecast
       // https://openweathermap.org/api/one-call-api
       // const weather = await fetch(
-      //   `http://api.openweathermap.org/data/2.5/onecall?lat=${latitude}&lon=${longitude}&units=metric&appid=${OPENWEATHERMAP_APIKEY}`
-      // )
-      //   .then((response) => response.json())
-      //   .then((json) => console.log(json));
+      //   `http://api.openweathermap.org/data/2.5/onecall?lat=${latitude}&lon=${longitude}&units=metric&appid=${process.env.NEXT_PUBLIC_OPENWEATHERMAP_APIKEY}`
+      // ).then((response) => response.json());
+
       const weather = WEATHER_API_EXAMPLE;
       // Other stuff that would be practical to visualise is
       // the weather today, and maybe the weather in the comming hour specially?
